@@ -6,6 +6,13 @@ import { AppPage } from './declarations';
 import Menu from './components/Menu';
 import Home from './pages/Home';
 import List from './pages/List';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import MyPage from './pages/MyPage';
+import Parser from './pages/Parser';
+import DoneInfo from './pages/DoneInfo';
+import Item1 from './pages/Item1Info';
+import Item2 from './pages/Item2Info';
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/core/css/core.css";
@@ -30,9 +37,14 @@ const appPages: AppPage[] = [
     icon: 'home'
   },
   {
-    title: 'List',
-    url: '/home/list',
-    icon: 'list'
+    title: 'Login',
+    url: '/home/login',
+    icon: 'information-circle-outline'
+  },
+  {
+    title: 'MyPage',
+    url: '/home/mypage',
+    icon: 'person'
   }
 ];
 
@@ -47,7 +59,13 @@ const App: React.SFC = () => (
           <IonPage id="main">
             <IonRouterOutlet>
               <Route path="/:tab(home)" component={Home} exact={true} />
-              <Route path="/:tab(home)/list" component={List} exact={true} />
+              <Route path="/:tab(home)/login" component={Login} exact={true} />
+              <Route path="/:tab(home)/register" component={Register} exact={true} />
+              <Route path="/:tab(home)/mypage" component={MyPage} exact={true} />
+              <Route path="/:tab(home)/parser" component={Parser} exact={true} />
+              <Route path="/:tab(home)/doneinfo" component={DoneInfo} exact={true} />
+              <Route path="/:tab(home)/item1" component={Item1} exact={true}/>
+              <Route path="/:tab(home)/item2" component={Item2} exact={true}/>
             </IonRouterOutlet>
           </IonPage>
         </IonSplitPane>

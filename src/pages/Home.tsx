@@ -14,6 +14,7 @@ import {
   IonListHeader,
   IonItem,
   IonIcon,
+  IonButton,
   IonButtons,
   IonMenuButton
 } from '@ionic/react';
@@ -33,40 +34,30 @@ const HomePage: React.SFC<any> = () => {
       </IonHeader>
       <IonContent>
         <IonCard class="welcome-card">
-          <IonImg src="/assets/shapes.svg" />
+          <IonImg src="/assets/ing.png" />
           <IonCardHeader>
-            <IonCardSubtitle>Get Started</IonCardSubtitle>
-            <IonCardTitle>Welcome to Ionic</IonCardTitle>
+            <IonCardSubtitle>쿠팡</IonCardSubtitle>
+            <IonCardTitle>Macbook Pro 13inch</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-            <p>
-              Now that your app has been created, you'll want to start building out features and
-              components. Check out some of the resources below for next steps.
-            </p>
           </IonCardContent>
+          <IonButton expand="block" href="/home/item1">
+            더 알아보기
+          </IonButton>
+        </IonCard>
+        <IonCard class="welcome-card">
+          <IonImg src="/assets/ing2.png"/>
+          <IonCardHeader>
+            <IonCardSubtitle>옥션</IonCardSubtitle>
+            <IonCardTitle>김해 뒷고기</IonCardTitle>
+          </IonCardHeader>
+          <IonCardContent>
+          </IonCardContent>
+          <IonButton expand="block" href="/home/item2">
+            더 알아보기
+          </IonButton>
         </IonCard>
 
-        <IonList lines="none">
-          <IonListHeader>
-            <IonLabel>Resources</IonLabel>
-          </IonListHeader>
-          <IonItem href="https://ionicframework.com/docs/">
-            <IonIcon slot="start" color="medium" name="book" />
-            <IonLabel>Ionic Documentation</IonLabel>
-          </IonItem>
-          <IonItem href="https://ionicframework.com/docs/building/scaffolding">
-            <IonIcon slot="start" color="medium" name="build" />
-            <IonLabel>Scaffold Out Your App</IonLabel>
-          </IonItem>
-          <IonItem href="https://ionicframework.com/docs/layout/structure">
-            <IonIcon slot="start" color="medium" name="grid" />
-            <IonLabel>Change Your App Layout</IonLabel>
-          </IonItem>
-          <IonItem href="https://ionicframework.com/docs/theming/basics">
-            <IonIcon slot="start" color="medium" name="color-fill" />
-            <IonLabel>Theme Your App</IonLabel>
-          </IonItem>
-        </IonList>
       </IonContent>
     </>
   );
