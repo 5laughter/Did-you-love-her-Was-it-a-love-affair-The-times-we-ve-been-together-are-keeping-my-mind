@@ -13,6 +13,7 @@ import Parser from './pages/Parser';
 import DoneInfo from './pages/DoneInfo';
 import Item1 from './pages/Item1Info';
 import Item2 from './pages/Item2Info';
+import Add from './pages/Add';
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/core/css/core.css";
@@ -66,6 +67,7 @@ const App: React.SFC = () => (
               <Route path="/:tab(home)/doneinfo" component={DoneInfo} exact={true} />
               <Route path="/:tab(home)/item1" component={Item1} exact={true}/>
               <Route path="/:tab(home)/item2" component={Item2} exact={true}/>
+              <Route path="/:tab(home)/add" component={Add} exact={true}/>
             </IonRouterOutlet>
           </IonPage>
         </IonSplitPane>

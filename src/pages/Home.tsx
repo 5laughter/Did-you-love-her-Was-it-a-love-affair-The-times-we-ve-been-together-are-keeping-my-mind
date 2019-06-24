@@ -57,7 +57,9 @@ const HomePage: React.SFC<any> = () => {
             더 알아보기
           </IonButton>
         </IonCard>
-
+        <IonButton expand="block" href="/home/add" color="danger">
+          택배 추가하기
+        </IonButton>
       </IonContent>
     </>
   );

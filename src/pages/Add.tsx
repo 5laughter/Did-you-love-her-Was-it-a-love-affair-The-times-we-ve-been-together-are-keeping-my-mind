@@ -6,13 +6,18 @@ import {
   IonMenuButton,
   IonTitle,
   IonItem,
+  IonIcon,
   IonContent,
+  IonList,
   IonInput,
   IonLabel,
-  IonButton
+  IonButton,
+  IonToast
 } from '@ionic/react';
 
-const Login: React.SFC<any> = () => {
+
+
+const Register: React.SFC<any> = () => {
   return (
     <>
       <IonHeader>
@@ -20,24 +25,19 @@ const Login: React.SFC<any> = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>Login</IonTitle>
+          <IonTitle>Add</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent>
         <IonItem>
-          <IonLabel position="floating">ID</IonLabel>
+          <IonLabel position="floating">송장번호</IonLabel>
           <IonInput></IonInput>
         </IonItem>
-        <IonItem>
-          <IonLabel position="floating">PASSWORD</IonLabel>
-          <IonInput type="password"></IonInput>
-        </IonItem>
-        <IonButton href="/home" expand="block">로그인(기능 구현 X)</IonButton>
-        <IonButton href="/home/register" color="secondary" expand="block">회원가입</IonButton>
+        <IonButton href="/home" color="secondary" expand="block">추가 완료 (기능 구현 X)</IonButton>
       </IonContent>
     </>
   );
 };
 
-export default Login;
+export default Register;

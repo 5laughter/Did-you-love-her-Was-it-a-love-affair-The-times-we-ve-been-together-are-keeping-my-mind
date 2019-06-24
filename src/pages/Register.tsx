@@ -46,7 +46,7 @@ const Register: React.SFC<any> = () => {
           <IonLabel position="floating">주소</IonLabel>
           <IonInput></IonInput>
         </IonItem>
-        <IonButton href="/home/login" color="secondary" expand="block">회원가입 완료</IonButton>
+        <IonButton href="/home/login" color="secondary" expand="block">회원가입 완료(기능 구현 X)</IonButton>
       </IonContent>
     </>
   );
